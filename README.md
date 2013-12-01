@@ -18,6 +18,7 @@ to update them like this:
 open a lxterminal window
 
 cd pibakeoff
+
 git pull
 
 
