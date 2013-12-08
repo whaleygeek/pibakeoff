@@ -22,3 +22,26 @@ cd pibakeoff
 git pull
 
 
+If you have done the connectivity workshop, you would have reconfigured
+your network interface for local networking with a static IP address.
+To return this to it's original configuration and to allow connection
+to the internet again, follow these steps:
+
+sudo nano /etc/network/interfaces
+
+Change 
+iface eth0 inet static
+to
+iface eth0 inet dhcp
+
+Delete lines:
+address, netmask, network, broadcast, gateway
+
+Then sudo reboot
+
+You should now be able to connect to the internet and use the above git pull
+instructions to update your resources from github
+
+
+
+
