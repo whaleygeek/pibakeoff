@@ -1,0 +1,12 @@
+#! /bin/bash
+
+if [ $# -eq 0 ] 
+then
+  # get all latest files
+  git pull
+  # now that update script is latest, run update actions
+  ./update 1
+else
+  # put any post-pull update actions here
+  echo Update completed      
+fi
